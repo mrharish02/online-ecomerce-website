@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layers skin</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="contact.html">Contact Us</li>
+                <li><a href="about.html">About</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search">
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="slidertop">
+        <div class="images">
+            <img src="images/slider1.webp">
+            <img src="images/slider2.webp">
+            <img src="images/slider3.webp">
+        </div>
+        <div class="btn-slider">
+            <span onclick="btn_slide(1)"></span>
+            <span onclick="btn_slide(2)"></span>
+            <span onclick="btn_slide(3)"></span>
+        </div>
+    </div>
+    <footer>
+        Thanks for reaching us out <br> Also follo us at <br><br><br><br>
+        <div class="social">
+            <a href="#"><img src="images/fb.webp" alt="facebook"></a>
+            <a href="#"><img src="images/ig.png" alt="instagram"></a>
+            <a href="#"><img src="images/yt.webp" alt="youtube"></a>
+            <a href="#"><img src="images/tt.png" alt="twitter"></a>
+        </div>
+    </footer>
+    <script>
+        var indexValue = 1;
+        showImg(indexValue);
+
+        function btn_slide(e) {
+            showImg(indexValue = e);
+        }
+
+        function showImg(e) {
+            var i;
+            const img = document.querySelectorAll('img');
+            const sliders = document.querySelectorAll('.btn-slider span');
+            if (e > img.length) {
+                indexValue = 1
+            }
+            if (e < 1) {
+                indexValue = img.length
+            }
+            for (i = 0; i < img.length; i++) {
+                img[i].style.display = "none";
+            }
+            img[indexValue - 1].style.display = "block";
+            for (i = 0; i < sliders.length; i++) {
+                sliders[i].style.background = "white";
+            }
+            sliders[indexValue - 1].style.background = "red";
+        }
+    </script>
+</body>
+
+</html>
