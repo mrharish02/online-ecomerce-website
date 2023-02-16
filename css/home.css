@@ -1,0 +1,234 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* media quaries */
+
+
+/* header section */
+
+.header {
+    padding: 10px 0;
+    background: linear-gradient(120deg, #2980b9, #8e44ad);
+}
+
+.header_elements {
+    color: white;
+    background-color: rgb(27, 27, 28);
+    border-radius: 30px;
+}
+
+.header_elements ul {
+    overflow: auto;
+}
+
+.header_elements li {
+    float: left;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+.header_elements li a {
+    font-size: 15px;
+    color: white;
+    padding: 3px 3px;
+    text-decoration: none;
+}
+
+.header_elements img {
+    float: left;
+    padding-left: 20px;
+    height: 39px;
+}
+
+.header_elements li #logout {
+    float: right;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+.header_elements li a #logout {
+    font-size: 15px;
+    color: white;
+    padding: 3px 3px;
+    text-decoration: none;
+}
+
+
+/* shop now section  */
+
+.shop_now {
+    width: 100%;
+    background-image: url("../images/image6.png");
+}
+
+.shop_item {
+    background-position: left;
+    width: 1000px;
+    height: 100%;
+    padding: 150px 50px;
+}
+
+.heading p {
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 1000;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.offer {
+    font-size: 22px;
+}
+
+.buy_button {
+    display: inline-block;
+    padding-left: 40px;
+}
+
+.buy_button a {
+    padding: 3px 3px;
+    border: solid 2px black;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+/* new arrivals section */
+
+.content {
+    font-family: sans-serif;
+}
+
+.content h3 {
+    text-align: center;
+    font-size: 14px;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.content a {
+    text-decoration: none;
+}
+
+.new_arrivals {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.content {
+    width: 20%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(27, 27, 28, 0.25), o 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.content:hover {
+    transform: translate(0px, -8px);
+}
+
+.content img {
+    width: 100%;
+    height: 350px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin: 0 auto;
+    display: block;
+}
+
+.content p {
+    text-align: center;
+    color: black;
+    padding-top: 0 8px;
+}
+
+.content h6 {
+    font-size: 26px;
+    text-align: center;
+    margin: 0;
+}
+
+.content button {
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.content .buy_button {
+    background: black;
+}
+
+
+/* cyberforce collecition */
+
+.cyberforce_collection {
+    background-image: url("../images/cyber.png");
+    background-position: left;
+    width: 100%;
+    height: 900px;
+}
+
+
+/* wonderlust collection  */
+
+.wonderlust_collection {
+    background-image: url("../images/wonder.webp");
+    background-position: left;
+    width: 100%;
+    height: 900px;
+}
+
+
+/* anime section */
+
+.anime_collection {
+    background-image: url("../images/anime.png");
+    background-position: left;
+    height: 450px;
+}
+
+
+/* footer section */
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px 30px 15px 30px;
+}
+
+.social_media {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer a {
+    text-decoration: none;
+    padding: 10px 3px;
+}
+
+.footer .social_media a img {
+    height: 15px;
+    width: 15px;
+}
