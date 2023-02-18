@@ -33,6 +33,7 @@ function auth() {
     return;
   }
   localStorage.clear;
+  localStorage.setItem("user", { uname: tempusername });
 }
 
 function signup() {

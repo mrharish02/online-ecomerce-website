@@ -211,10 +211,7 @@ function buys(id) {
   console.log(id);
   const item = sproduct.find((prod) => prod.id === id);
   console.log(item);
-  let data = JSON.parse(localStorage.getItem("podet"));
-  data.push(item);
-  console.log(data);
-  localStorage.setItem("prodet", JSON.stringify(data));
+  localStorage.setItem("prodet", JSON.stringify(item));
   alert("Item added to cart");
 }
 
@@ -222,9 +219,7 @@ function buyc(id) {
   console.log(id);
   const item = cproduct.find((prod) => prod.id === id);
   console.log(item);
-  let data = JSON.parse(localStorage.getItem("pordet"));
-  data.push(item);
-  localStorage.setItem("prodet", JSON.stringify(data));
+  localStorage.setItem("prodet", JSON.stringify(item));
   alert("Item added to cart");
 }
 
@@ -232,9 +227,7 @@ function buyw(id) {
   console.log(id);
   const item = wproduct.find((prod) => prod.id === id);
   console.log(item);
-  let data = JSON.parse(localStorage.getItem("pordet"));
-  data.push(item);
-  localStorage.setItem("prodet", JSON.stringify(data));
+  localStorage.setItem("prodet", JSON.stringify(item));
   alert("Item added to cart");
 }
 
@@ -242,9 +235,7 @@ function buya(id) {
   console.log(id);
   const item = aproduct.find((prod) => prod.id === id);
   console.log(item);
-  let data = JSON.parse(localStorage.getItem("pordet"));
-  data.push(item);
-  localStorage.setItem("prodet", JSON.stringify(data));
+  localStorage.setItem("prodet", JSON.stringify(item));
   alert("Item added to cart");
 }
 
