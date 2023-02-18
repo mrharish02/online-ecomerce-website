@@ -14,18 +14,18 @@ var users = [
 ];
 
 function auth() {
-  var email = document.getElementById("email").value;
+  var username = document.getElementById("username").value;
   var password = document.getElementById("password").value;
-  const tempuser = users.find((user) => user.uemail === email);
+  const tempuser = users.find((user) => user.uname === username);
   if (tempuser === undefined) {
-    var tempemail = "__";
+    var tempusername = "__";
     var temppassword = "__";
   } else {
-    var tempemail = tempuser.uemail;
+    var tempusername = tempuser.uname;
     var temppassword = tempuser.upassword;
   }
   console.log("logged in successfully!!!");
-  if (email === tempemail && temppassword === password) {
+  if (username === tempusername && temppassword === password) {
     window.location.assign("html/home.html");
     alert("Logged in successfully");
   } else {
