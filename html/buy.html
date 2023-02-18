@@ -1,1 +1,159 @@
-this is buying page
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <style>
+        body {
+            height: 100vh;
+        }
+        
+        .purchase {
+            background-color: #2980b9;
+        }
+        
+        .purchase {
+            display: flex;
+            flex-wrap: wrap;
+            gap: space-between;
+        }
+        
+        .product {
+            padding: 20px 0 20px 200px;
+            margin: 30px 40px 20px 40px;
+        }
+        
+        .product img {
+            height: 350px;
+            border-radius: 15px;
+        }
+        
+        .purchase .right {
+            padding: 30px 50px;
+            margin: 50px 50px;
+        }
+        
+        .purchase .right form {
+            display: flex;
+            flex-direction: column;
+            padding: 40px 40px 40px 40px;
+            border-radius: 15px;
+            background-color: black;
+            color: white;
+        }
+        
+        .purchase .right form span {
+            font-size: 15px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding-bottom: 10px;
+        }
+        
+        .purchase .right form select {
+            font-size: 15px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border-radius: 6px;
+            padding-bottom: 10px;
+        }
+        
+        .purchase .right form input {
+            font-size: 15px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border-radius: 6px;
+            padding-bottom: 10px;
+        }
+        
+        .checkout {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .checkout button {
+            font-size: 14px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+            margin: 10px 10px;
+            background: white;
+            padding: 20px 30px 20px 30px;
+            border-radius: 5px;
+            transition: 0.5s;
+        }
+        
+        .checkout button:hover {
+            background: #8e44ad;
+            transform: translate(5px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header_elements">
+            <img src="../images/logo.png" alt="">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li id="logout"><a href="../index.html">Log Out</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="purchase">
+        <div class="left" id="prodisc">
+
+        </div>
+        <div class="right">
+            <form action="payment.html">
+                <span>Please select your phone model</span>
+                <select name="phoneModel">
+                        <option>Samsung s20 ultra</option>
+                        <option>Samsung s21 ultra</option>
+                        <option>Samsung s22 ultra</option>
+                        <option>Samsung s23 ultra</option>
+                        <option>IPhone 14 Pro</option>
+                        <option>IPhone 14</option>
+                        <option>IPhone 13 Pro</option>
+                        <option>IPhone 13</option>
+                        <option>IPhone 12 Pro</option>
+                        <option>IPhone 12</option>
+                        <option>Vivo X90 Pro</option>
+                        <option>Vivo X80 Pro</option>
+                        <option>One Plus 11 Pro</option>
+                        <option>One Plus</option>
+                </select>
+                <input type="number" placeholder="Quantity">
+                <input type="text" placeholder="Coupen COde">
+                <div class="checkout">
+                    <button>CHECKOUT</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <div class="footer">
+        <p>Thanks for reaching us out <br> Also follow us at <br> <br></p>
+        <div class="social_media">
+            <a href="#"><img src="../images/fb.webp" alt="facebook"></a>
+            <a href="#"><img src="../images/ig.png" alt="instagram"></a>
+            <a href="#"><img src="../images/yt.webp" alt="youtube"></a>
+            <a href="#"><img src="../images/tt.png" alt="twitter"></a>
+        </div>
+    </div>
+    <script>
+        const element = document.getElementById("prodisc");
+        const item = JSON.parse(localStorage.getItem("prodet"));
+        element.innerHTML = `
+        <div class="product">
+            <img src=${item.image} alt="">
+        </div>
+        `
+    </script>
+</body>
+
+</html>

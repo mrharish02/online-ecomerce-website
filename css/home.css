@@ -99,6 +99,10 @@
 
 /* new arrivals section */
 
+.new_arrive {
+    padding: 20px 40px;
+}
+
 .content {
     font-family: sans-serif;
 }
@@ -144,6 +148,8 @@
     height: 350px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     margin: 0 auto;
     display: block;
 }

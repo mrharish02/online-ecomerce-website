@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+
+/* media queries */
+
+@media only screen and (max-width: 900px) {
+    .container form {
+        width: 450px;
+        padding: 20px;
+        background: white;
+        border: 3px solid black;
+        border-radius: 15px;
+        box-shadow: 0 5px 10px rgba(rgb(126, 129, 130), green, blue, alpha);
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    min-height: 100vh;
+    background: linear-gradient(120deg, #2980b9, #8e44ad);
+    padding-bottom: 70px;
+}
+
+.container form {
+    padding: 20px;
+    width: 1000px;
+    background: white;
+    border: 3px solid black;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(rgb(126, 129, 130), green, blue, alpha);
+}
+
+.container form .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.container form .row .col .title {
+    font-size: 20px;
+    color: #333;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.container form .row .col .input_box {
+    margin: 15px 0;
+}
+
+.container form .row .col .input_box span {
+    margin-bottom: 5px;
+    display: block;
+}
+
+.container form .row .col .input_box input {
+    width: 100%;
+    border: 1px solid rgb(160, 160, 160);
+    padding: 10px 15px;
+    font-size: 15px;
+    text-transform: none;
+}
+
+.container form .row .col .input_box input:focus {
+    border: 1px solid black;
+}
+
+.container form .row .col .flex {
+    display: flex;
+    gap: 15px;
+}
+
+.container form .row .col .flex .input_box {
+    margin-top: 5px;
+}
+
+.container form .row .col .input_box img {
+    height: 34px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1px black);
+}
+
+.container form .submit {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 17px;
+    background: #2980b9;
+    color: white;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.container form .submit:hover {
+    background-color: #8e44ad;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logout</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <style>
+        .purchasedone {
+            background: linear-gradient(120deg, #2980b9, #8e44ad);
+            height: 77.5vh;
+            width: 100%;
+        }
+        
+        .purchasedone .contentlogout {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .purchasedone .contentlogout h1 {
+            padding-top: 50px;
+            font-weight: 1000;
+            padding-bottom: 20px;
+        }
+        
+        .purchasedone .contentlogout button {
+            color: white;
+            font-weight: 1000;
+            margin-bottom: 20px;
+            padding: 3px 3px;
+            border-radius: 5px;
+            transition: 0.5s;
+        }
+        
+        .purchasedone .contentlogout button a {
+            text-decoration: none;
+        }
+        
+        .purchasedone .contentlogout button:hover {
+            color: white;
+            background: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header_elements">
+            <img src="../images/logo.png" alt="">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li id="logout"><a href="../index.html">Log Out</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="purchasedone">
+        <div class="contentlogout">
+            <h1>Thank you for purchasing from layers skin</h1>
+            <button class="bt"><a href="home.html">Return Home</a></button>
+            <button class="bt"><a href="../index.html">Log Out</a></button>
+        </div>
+
+    </div>
+    <div class="footer">
+        <p>Thanks for reaching us out <br> Also follow us at <br> <br></p>
+        <div class="social_media">
+            <a href="#"><img src="../images/fb.webp" alt="facebook"></a>
+            <a href="#"><img src="../images/ig.png" alt="instagram"></a>
+            <a href="#"><img src="../images/yt.webp" alt="youtube"></a>
+            <a href="#"><img src="../images/tt.png" alt="twitter"></a>
+        </div>
+    </div>
+    <script>
+        const element = document.getElementById("prodisc");
+        const item = JSON.parse(localStorage.getItem("prodet"));
+        element.innerHTML = `
+        <div class="product">
+            <img src=${item.image} alt="">
+        </div>
+        `
+    </script>
+</body>
+
+</html>
